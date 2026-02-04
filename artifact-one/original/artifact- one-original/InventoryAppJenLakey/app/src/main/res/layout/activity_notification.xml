@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/app_name"
+        app:titleTextColor="@android:color/white"
+        app:subtitleTextColor="@android:color/white"
+        app:titleCentered="true" />
+
+    <TextView
+        android:id="@+id/tvNotifPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="16dp"
+        android:text="@string/allow_notifications_so_you_don_t_miss_important_inventory_updates" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingBottom="25dp"
+        android:text="@string/allow_notifications"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnAllowNotif"
+        android:text="@string/allow_notifications"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnDenyNotif"
+        android:text="@string/deny"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

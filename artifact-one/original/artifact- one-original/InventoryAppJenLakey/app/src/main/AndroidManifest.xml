@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- SMS permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:name=".InventoryApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.InventoryApp">
+        <activity
+            android:name=".ui.notifications.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.sms.PhoneNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.item.EditItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.sms.SmsPermissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.item.AddItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.item.ItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.inventory.InventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:exported="false" /> <!-- Launcher activity must be exported = true -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
