@@ -1,0 +1,49 @@
+<resources>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="item_name">Item Name</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="quantity">Quantity</string>
+    <string name="quantity_label">Qty: %1$d</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="save_item">Save Item</string>
+    <string name="allow_sms_notifications">Allow SMS notifications?</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="sms_permission_explanation">
+    To keep you informed, we can send alerts for low inventory. Allow SMS permission so we can notify you when items need restocking. You can change this later in Settings.
+</string>
+    <string name="allow_sms">Allow SMS</string>
+    <string name="deny_sms">Not now</string>
+    <string name="decrease">–</string>
+    <string name="increase">+</string>
+    <string name="edit_item_details">Edit Item Details</string>
+    <string name="add_item">Add Item</string>
+    <string name="app_name">The Inventory App</string>
+    <string name="login_page">Login</string>
+    <string name="register_page">Register</string>
+    <string name="inventory_page">Inventory</string>
+    <string name="item_detail_page">Item Details</string>
+    <string name="edit_item_page">Edit Item</string>
+    <string name="add_item_page">Add Item</string>
+    <string name="decrease_quantity">decrease quantity</string>
+    <string name="increase_quantity">increase quantity</string>
+    <string name="app_logo">The Inventory App Logo</string>
+    <string name="item_name_label">Item Name:</string>
+    <string name="category_label">Category:</string>
+    <string name="description_label">Description:</string>
+    <string name="location_label">Location:</string>
+    <string name="quantity_ident">Quantity:</string>
+    <string name="role">Role</string>
+    <string name="save_phone_number">Save Phone Number</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="allow_notifications_so_you_don_t_miss_important_inventory_updates">Allow notifications so you don’t miss important inventory updates.</string>
+    <string name="allow_notifications">Allow Notifications</string>
+    <string name="deny">Deny</string>
+    <string name="back_to_inventory">Back to inventory</string>
+</resources>
