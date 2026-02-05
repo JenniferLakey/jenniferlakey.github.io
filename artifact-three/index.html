@@ -6,26 +6,49 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 40px;
             max-width: 900px;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #ffffff, #e8f1ff);
         }
+
+        .card {
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
         nav a {
             margin-right: 20px;
             text-decoration: none;
             color: #0366d6;
             font-weight: bold;
         }
-        h1, h2, h3 {
-            color: #333;
+
+        nav a:hover {
+            color: #024ea2;
+            text-decoration: underline;
         }
+
+        h1, h2, h3 {
+            margin-top: 40px;
+            color: #024ea2;
+        }
+
+        .card h1,
+        .card h2,
+        .card h3 {
+            margin-top: 0;
+        }
+
         iframe {
             border: 1px solid #ccc;
             margin-top: 10px;
             margin-bottom: 30px;
-        }
-        .section {
-            margin-bottom: 50px;
+            width: 100%;
+            height: 600px;
         }
     </style>
 </head>
@@ -40,176 +63,183 @@
         <a href="/artifact-three/">Artifact Three</a>
     </nav>
 
-    <h1>Artifact Three – Databases</h1>
+    <hr style="margin-top: 50px; margin-bottom: 40px;">
+
+    <!-- Modern Header -->
+    <header style="
+        background: #ffffffcc;
+        padding: 30px 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        margin-top: 30px;
+        margin-bottom: 40px;
+    ">
+        <h1 style="margin: 0; font-size: 2.2em; color: #024ea2;">
+            Artifact Three – Databases
+        </h1>
+        <p style="margin: 8px 0 0; font-size: 1.2em; color: #444;">
+            MongoDB Integration • CRUD Operations • Data Integrity • Backend Architecture
+        </p>
+    </header>
 
     <!-- Narrative Section -->
-    <div class="section">
+    <div class="card">
         <h2>Artifact Description</h2>
         <p>
-            The artifact I selected for my database enhancement is my CS 320 Software Test and Automation 
-            QA project. I originally created this project in 2023 as part of a course focused on unit 
-            testing, validation, and object-oriented design. The project consisted of three independent 
-            services (Contact, Task, and Appointment), each with its own domain class, service class, and 
-            comprehensive JUnit test suite. All data was stored entirely in memory using ArrayLists, and 
-            each service enforced validation rules such as ID uniqueness, field length constraints, and 
+            The artifact I selected for my database enhancement is my CS 320 Software Test and Automation
+            QA project. I originally created this project in 2023 as part of a course focused on unit
+            testing, validation, and object-oriented design. The project consisted of three independent
+            services (Contact, Task, and Appointment), each with its own domain class, service class, and
+            comprehensive JUnit test suite. All data was stored entirely in memory using ArrayLists, and
+            each service enforced validation rules such as ID uniqueness, field length constraints, and
             date restrictions.
         </p>
 
         <p>
-            The artifact demonstrated strong testing practices and clean object-oriented structure, but it 
-            lacked any form of persistent storage or scalable data management. Enhancing this project 
-            provided an opportunity to transform a small, in-memory application into a fully database-backed 
+            The artifact demonstrated strong testing practices and clean object-oriented structure, but it
+            lacked any form of persistent storage or scalable data management. Enhancing this project
+            provided an opportunity to transform a small, in-memory application into a fully database-backed
             system.
         </p>
 
         <h2>Justification for Inclusion and Skills Demonstrated</h2>
         <p>
-            I chose this artifact because it represents a strong foundation for demonstrating my ability to 
-            transform an in-memory application into a persistent, scalable backend system. The original 
-            project already showcased my skills in validation, testing, and service-layer logic, but it had 
-            a major architectural limitation: all data disappeared as soon as the program stopped running. 
-            There was no persistence, no indexing, no schema, and no ability to scale beyond a classroom 
+            I chose this artifact because it represents a strong foundation for demonstrating my ability to
+            transform an in-memory application into a persistent, scalable backend system. The original
+            project already showcased my skills in validation, testing, and service-layer logic, but it had
+            a major architectural limitation: all data disappeared as soon as the program stopped running.
+            There was no persistence, no indexing, no schema, and no ability to scale beyond a classroom
             example.
         </p>
 
         <p>
-            Enhancing this artifact allowed me to demonstrate real-world backend engineering skills. I 
-            replaced the in-memory ArrayLists with MongoDB collections, implemented full CRUD operations 
-            using the MongoDB Java driver, added unique indexes to enforce ID constraints at the database 
-            level, and refactored all three service classes to interact with a persistent data layer. I also 
-            added structured error handling for database failures, implemented integration tests to validate 
+            Enhancing this artifact allowed me to demonstrate real-world backend engineering skills. I
+            replaced the in-memory ArrayLists with MongoDB collections, implemented full CRUD operations
+            using the MongoDB Java driver, added unique indexes to enforce ID constraints at the database
+            level, and refactored all three service classes to interact with a persistent data layer. I also
+            added structured error handling for database failures, implemented integration tests to validate
             persistence and indexing behavior, and documented the new architecture and schema.
         </p>
 
         <p>
-            These enhancements significantly improved the artifact’s functionality, scalability, and 
+            These enhancements significantly improved the artifact’s functionality, scalability, and
             reliability, transforming it from a simple academic exercise into a realistic backend service.
         </p>
 
         <h2>Alignment With Planned Course Outcomes</h2>
 
         <p><strong>Outcome 3 – Design and evaluate computing solutions while managing trade-offs:</strong><br>
-            This enhancement required evaluating the limitations of in-memory storage and comparing 
-            alternatives such as SQL vs. NoSQL databases. I selected MongoDB based on its flexibility, 
-            scalability, and suitability for document-based data. I also evaluated trade-offs between 
-            application-level validation and database-level constraints, and between simple list operations 
+            This enhancement required evaluating the limitations of in-memory storage and comparing
+            alternatives such as SQL vs. NoSQL databases. I selected MongoDB based on its flexibility,
+            scalability, and suitability for document-based data. I also evaluated trade-offs between
+            application-level validation and database-level constraints, and between simple list operations
             and indexed queries.
         </p>
 
         <p><strong>Outcome 4 – Demonstrate innovative techniques, skills, and tools in computing practices:</strong><br>
-            Integrating MongoDB required learning and applying new tools, including the MongoDB Java driver, 
-            BSON document mapping, indexing strategies, and database lifecycle management. I refactored the 
-            entire service layer to use repositories backed by a real database, added integration tests, and 
-            implemented structured error handling. These changes demonstrate modern backend development 
+            Integrating MongoDB required learning and applying new tools, including the MongoDB Java driver,
+            BSON document mapping, indexing strategies, and database lifecycle management. I refactored the
+            entire service layer to use repositories backed by a real database, added integration tests, and
+            implemented structured error handling. These changes demonstrate modern backend development
             practices.
         </p>
 
         <p><strong>Outcome 5 – Develop a security mindset that anticipates vulnerabilities and ensures data integrity:</strong><br>
-            The enhancement introduced validation at both the application and database levels, duplicate key 
-            protection through unique indexes, and structured error handling for invalid operations. By 
-            enforcing data integrity in multiple layers, the system is now more resilient to malformed input, 
+            The enhancement introduced validation at both the application and database levels, duplicate key
+            protection through unique indexes, and structured error handling for invalid operations. By
+            enforcing data integrity in multiple layers, the system is now more resilient to malformed input,
             inconsistent state, and concurrency issues.
-        </p>
-
-        <p>
-            I do not need to update my outcome coverage plan; the enhancement met all the outcomes I 
-            originally targeted.
         </p>
 
         <h2>Reflection on the Enhancement Process</h2>
         <p>
-            Enhancing this artifact taught me a great deal about real-world backend architecture and the 
-            complexities that arise when moving from an in-memory system to a persistent one. One of the 
-            biggest lessons was understanding how much responsibility shifts from the application to the 
-            database once persistence is introduced. Instead of relying solely on Java validation and 
-            ArrayList scans, I had to design collections, enforce unique indexes, and handle database-level 
+            Enhancing this artifact taught me a great deal about real-world backend architecture and the
+            complexities that arise when moving from an in-memory system to a persistent one. One of the
+            biggest lessons was understanding how much responsibility shifts from the application to the
+            database once persistence is introduced. Instead of relying solely on Java validation and
+            ArrayList scans, I had to design collections, enforce unique indexes, and handle database-level
             exceptions such as duplicate keys or connection failures.
         </p>
 
         <p>
-            Another major learning experience was writing integration tests. In the original CS 320 project, 
-            all tests were unit tests that validated logic in isolation. With a database in place, I had to 
-            write tests that interacted with MongoDB directly, reset collections between runs, and verify 
-            that CRUD operations behaved correctly at the persistence layer. This required a deeper 
-            understanding of how to structure tests that are reliable, repeatable, and independent of one 
+            Another major learning experience was writing integration tests. In the original CS 320 project,
+            all tests were unit tests that validated logic in isolation. With a database in place, I had to
+            write tests that interacted with MongoDB directly, reset collections between runs, and verify
+            that CRUD operations behaved correctly at the persistence layer. This required a deeper
+            understanding of how to structure tests that are reliable, repeatable, and independent of one
             another.
         </p>
 
         <p>
-            I also encountered several challenges. Refactoring the services required carefully removing all 
-            references to the old in-memory lists and replacing them with repository calls. Ensuring that 
-            validation rules remained consistent across both the application and database layers required 
-            thoughtful design. Handling dates in the Appointment service required updating deprecated 
-            constructors and ensuring that tests would remain stable over time. And writing clean, 
-            maintainable repository classes required learning how to map between Java objects and BSON 
+            I also encountered several challenges. Refactoring the services required carefully removing all
+            references to the old in-memory lists and replacing them with repository calls. Ensuring that
+            validation rules remained consistent across both the application and database layers required
+            thoughtful design. Handling dates in the Appointment service required updating deprecated
+            constructors and ensuring that tests would remain stable over time. And writing clean,
+            maintainable repository classes required learning how to map between Java objects and BSON
             documents effectively.
         </p>
 
         <p>
-            Despite these challenges, the enhancement significantly improved the artifact. It now supports 
-            persistent storage, scalable queries, strong data integrity, and realistic error handling. The 
-            project behaves much more like a real backend service, and it demonstrates my ability to design, 
+            Despite these challenges, the enhancement significantly improved the artifact. It now supports
+            persistent storage, scalable queries, strong data integrity, and realistic error handling. The
+            project behaves much more like a real backend service, and it demonstrates my ability to design,
             implement, and test a complete database-backed architecture.
         </p>
     </div>
 
     <!-- Original Artifact Section -->
-    <div class="section">
+    <div class="card">
         <h2>Original Artifact – CS 320 Services</h2>
         <p>
-            In the embedded file explorer below, expand the <strong>artifact-three</strong> folder in the left 
-            sidebar, then select the folder labeled <strong>original</strong>. This will reveal the complete file 
-            structure of the original CS 320 in-memory services, including the Contact, Task, and Appointment 
+            In the embedded file explorer below, expand the <strong>artifact-three</strong> folder in the left
+            sidebar, then select the folder labeled <strong>original</strong>. This will reveal the complete file
+            structure of the original CS 320 in-memory services, including the Contact, Task, and Appointment
             modules. You may click any file to view its contents directly within this page.
         </p>
 
         <p>
-            While both the original and enhanced versions of Artifact Three appear in the left panel, this viewer 
-            is intended for exploring the <strong>original</strong> implementation. A separate viewer is embedded 
-            below for the enhanced version to make comparison easier and to allow each version to be reviewed 
+            While both the original and enhanced versions of Artifact Three appear in the left panel, this viewer
+            is intended for exploring the <strong>original</strong> implementation. A separate viewer is embedded
+            below for the enhanced version to make comparison easier and to allow each version to be reviewed
             independently.
         </p>
 
-        <!-- Placeholder iframe — replace with GitHub1s link -->
-        <iframe 
-            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-three/original"
-            width="100%" 
-            height="600px">
+        <iframe
+            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-three/original">
         </iframe>
     </div>
 
     <!-- Enhanced Artifact Section -->
-    <div class="section">
+    <div class="card">
         <h2>Enhanced Artifact – Database-Backed Services</h2>
         <p>
-            In the embedded file explorer below, expand the <strong>artifact-three</strong> folder in the left 
-            sidebar, then select the folder labeled <strong>enhanced</strong>. This will display the updated 
+            In the embedded file explorer below, expand the <strong>artifact-three</strong> folder in the left
+            sidebar, then select the folder labeled <strong>enhanced</strong>. This will display the updated
             database-backed implementation, including MongoDB repositories, CRUD operations, and integration tests.
         </p>
 
         <p>
-            Although both the original and enhanced versions can be accessed from the left panel, this viewer is 
-            focused on the <strong>enhanced</strong> version. The original version is shown above to support 
+            Although both the original and enhanced versions can be accessed from the left panel, this viewer is
+            focused on the <strong>enhanced</strong> version. The original version is shown above to support
             clear, side-by-side comparison of the architectural improvements.
         </p>
-        <!-- Placeholder iframe — replace with GitHub1s link -->
-        <iframe 
-            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-three/enhanced"
-            width="100%" 
-            height="600px">
+
+        <iframe
+            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-three/enhanced">
         </iframe>
     </div>
 
     <!-- Enhancement Summary -->
-    <div class="section">
+    <div class="card">
         <h2>Enhancement Summary</h2>
 
         <p>
-            This enhancement transformed my CS 320 project from an in-memory academic exercise into a 
-            fully persistent, database-backed backend service. I integrated MongoDB, implemented CRUD 
-            operations, added unique indexes, refactored all service classes, introduced structured error 
-            handling, and wrote integration tests to validate persistence behavior. These improvements 
-            demonstrate my ability to design scalable backend architectures, enforce data integrity, and 
+            This enhancement transformed my CS 320 project from an in-memory academic exercise into a
+            fully persistent, database-backed backend service. I integrated MongoDB, implemented CRUD
+            operations, added unique indexes, refactored all service classes, introduced structured error
+            handling, and wrote integration tests to validate persistence behavior. These improvements
+            demonstrate my ability to design scalable backend architectures, enforce data integrity, and
             apply modern database engineering practices.
         </p>
     </div>
