@@ -6,26 +6,49 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 40px;
             max-width: 900px;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #ffffff, #e8f1ff);
         }
+
+        .card {
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
         nav a {
             margin-right: 20px;
             text-decoration: none;
             color: #0366d6;
             font-weight: bold;
         }
-        h1, h2, h3 {
-            color: #333;
+
+        nav a:hover {
+            color: #024ea2;
+            text-decoration: underline;
         }
+
+        h1, h2, h3 {
+            margin-top: 40px;
+            color: #024ea2;
+        }
+
+        .card h1,
+        .card h2,
+        .card h3 {
+            margin-top: 0;
+        }
+
         iframe {
             border: 1px solid #ccc;
             margin-top: 10px;
             margin-bottom: 30px;
-        }
-        .section {
-            margin-bottom: 50px;
+            width: 100%;
+            height: 600px;
         }
     </style>
 </head>
@@ -40,42 +63,59 @@
         <a href="/artifact-three/">Artifact Three</a>
     </nav>
 
-    <h1>Artifact Two – Algorithms & Data Structures</h1>
+    <hr style="margin-top: 50px; margin-bottom: 40px;">
+
+    <!-- Modern Header -->
+    <header style="
+        background: #ffffffcc;
+        padding: 30px 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        margin-top: 30px;
+        margin-bottom: 40px;
+    ">
+        <h1 style="margin: 0; font-size: 2.2em; color: #024ea2;">
+            Artifact Two – Algorithms & Data Structures
+        </h1>
+        <p style="margin: 8px 0 0; font-size: 1.2em; color: #444;">
+            Procedural Mesh Generation • Parametric Surfaces • Performance Optimization
+        </p>
+    </header>
 
     <!-- Narrative Section -->
-    <div class="section">
+    <div class="card">
         <h2>Artifact Description</h2>
         <p>
-            The artifact I selected for my Category Two enhancement is the custom mesh generation module 
-            from my CS 330 Computational Graphics and Visualization final project. The original project 
-            was a fully navigable 3D scene built in modern OpenGL using C++. Although the course did not 
-            require students to implement their own geometric meshes, I chose to extend the rendering 
-            engine by designing several procedural shapes myself. These included a curved cone, a tapered 
-            torus, a spiral mesh, and a sine wave deformed cone. All of these meshes were implemented in 
-            the <em>ShapeMeshes.cpp</em> module, where I wrote the algorithms that compute vertex positions, 
+            The artifact I selected for my Category Two enhancement is the custom mesh generation module
+            from my CS 330 Computational Graphics and Visualization final project. The original project
+            was a fully navigable 3D scene built in modern OpenGL using C++. Although the course did not
+            require students to implement their own geometric meshes, I chose to extend the rendering
+            engine by designing several procedural shapes myself. These included a curved cone, a tapered
+            torus, a spiral mesh, and a sine wave deformed cone. All of these meshes were implemented in
+            the <em>ShapeMeshes.cpp</em> module, where I wrote the algorithms that compute vertex positions,
             normals, UV coordinates, and index buffers for each shape.
         </p>
 
         <p>
-            For this enhancement, I focused specifically on that module. The artifact represents a 
-            substantial amount of original algorithmic work, mathematical modeling, and data structure 
-            design. This made it an ideal candidate for demonstrating my skills in algorithms and data 
+            For this enhancement, I focused specifically on that module. The artifact represents a
+            substantial amount of original algorithmic work, mathematical modeling, and data structure
+            design. This made it an ideal candidate for demonstrating my skills in algorithms and data
             structures.
         </p>
 
         <h2>Justification for Inclusion and Skills Demonstrated</h2>
         <p>
-            I selected this artifact because it showcases my ability to design and implement mathematically 
-            driven algorithms, work with dynamic data structures, and optimize computational workflows. 
-            Procedural mesh generation is inherently algorithmic. Each shape is defined by parametric 
-            equations, nested loops, and geometric transformations. The code must efficiently compute 
-            thousands of vertices and indices per frame, and the structure of the algorithm directly 
+            I selected this artifact because it showcases my ability to design and implement mathematically
+            driven algorithms, work with dynamic data structures, and optimize computational workflows.
+            Procedural mesh generation is inherently algorithmic. Each shape is defined by parametric
+            equations, nested loops, and geometric transformations. The code must efficiently compute
+            thousands of vertices and indices per frame, and the structure of the algorithm directly
             affects performance.
         </p>
 
         <p>
             The enhancement I performed adds a new parametric mesh—a fully customizable superellipsoid—
-            and significantly improves the clarity, maintainability, and performance of the existing mesh 
+            and significantly improves the clarity, maintainability, and performance of the existing mesh
             generation code. This enhancement demonstrates several key skills:
         </p>
 
@@ -89,138 +129,127 @@
         </ul>
 
         <p>
-            These improvements make the artifact more professional, more maintainable, and more 
-            representative of my abilities as a computer science professional. In addition to demonstrating 
-            algorithmic and data structure skills, this enhancement also reflects my strengths in project 
-            management for STEM. I planned the enhancement as a structured, multi-stage task, coordinated 
-            mathematical modeling with performance optimization, and ensured safe integration by testing 
+            These improvements make the artifact more professional, more maintainable, and more
+            representative of my abilities as a computer science professional. In addition to demonstrating
+            algorithmic and data structure skills, this enhancement also reflects my strengths in project
+            management for STEM. I planned the enhancement as a structured, multi-stage task, coordinated
+            mathematical modeling with performance optimization, and ensured safe integration by testing
             the new mesh in an isolated environment.
         </p>
 
         <h2>Alignment With Planned Course Outcomes</h2>
         <p>
-            In Module One, I planned for this enhancement to demonstrate my competency in algorithmic 
+            In Module One, I planned for this enhancement to demonstrate my competency in algorithmic
             reasoning, data structure design, and performance evaluation. I met those goals fully.
         </p>
 
         <p><strong>Outcome 3 – Design and evaluate computing solutions while managing trade-offs:</strong><br>
-            I evaluated multiple approaches to mesh generation, analyzed their performance trade-offs, and 
-            implemented optimizations that improved runtime efficiency. I also validated the new mesh in a 
-            standalone test scene, demonstrating the ability to isolate and evaluate a computing solution 
+            I evaluated multiple approaches to mesh generation, analyzed their performance trade-offs, and
+            implemented optimizations that improved runtime efficiency. I also validated the new mesh in a
+            standalone test scene, demonstrating the ability to isolate and evaluate a computing solution
             independently.
         </p>
 
         <p><strong>Outcome 4 – Demonstrate innovative techniques, skills, and tools in computing practices:</strong><br>
-            The enhancement required mathematical modeling, geometric computation, GPU buffer management, 
-            and optimized data structures. The new superellipsoid mesh and the refactored documentation 
+            The enhancement required mathematical modeling, geometric computation, GPU buffer management,
+            and optimized data structures. The new superellipsoid mesh and the refactored documentation
             demonstrate innovative, industry-aligned practices in graphics programming.
         </p>
 
         <p><strong>Outcome 5 – Develop a security mindset that anticipates vulnerabilities and ensures data integrity:</strong><br>
-            I validated all input parameters, clamped unsafe values, and ensured that no invalid geometric 
-            configurations could cause rendering errors or memory issues. Testing the mesh in isolation 
+            I validated all input parameters, clamped unsafe values, and ensured that no invalid geometric
+            configurations could cause rendering errors or memory issues. Testing the mesh in isolation
             further reinforces safe and controlled integration.
-        </p>
-
-        <p>
-            No updates to my outcome coverage plan are needed. The enhancement aligns exactly with the 
-            outcomes I intended to demonstrate.
         </p>
 
         <h2>Reflection on the Enhancement Process</h2>
         <p>
-            Enhancing this artifact taught me a great deal about algorithmic efficiency, geometric 
-            computation, and the importance of clear documentation. One of the biggest lessons was how 
-            dramatically precomputation can improve performance in nested loop algorithms. By moving 
-            trigonometric calculations out of the inner loops, I reduced unnecessary work and improved 
-            cache behavior, even though the overall asymptotic complexity remained Θ(n²). This reinforced 
-            the idea that algorithmic optimization is not only about changing complexity classes—it is 
+            Enhancing this artifact taught me a great deal about algorithmic efficiency, geometric
+            computation, and the importance of clear documentation. One of the biggest lessons was how
+            dramatically precomputation can improve performance in nested loop algorithms. By moving
+            trigonometric calculations out of the inner loops, I reduced unnecessary work and improved
+            cache behavior, even though the overall asymptotic complexity remained Θ(n²). This reinforced
+            the idea that algorithmic optimization is not only about changing complexity classes—it is
             often about reducing constant factors and improving data locality.
         </p>
 
         <p>
-            Another major learning experience was documenting mathematical reasoning. My original meshes 
-            worked correctly, but the lack of clear explanations made the code harder to understand and 
-            maintain. Writing detailed documentation for the new superellipsoid mesh—including formulas, 
-            parameter descriptions, and complexity analysis—helped me articulate the underlying concepts 
+            Another major learning experience was documenting mathematical reasoning. My original meshes
+            worked correctly, but the lack of clear explanations made the code harder to understand and
+            maintain. Writing detailed documentation for the new superellipsoid mesh—including formulas,
+            parameter descriptions, and complexity analysis—helped me articulate the underlying concepts
             more clearly and made the module more professional and portfolio-ready.
         </p>
 
         <p>
-            I also faced challenges during the enhancement. Designing a new parametric mesh required careful 
-            attention to coordinate systems, exponentiation rules, and normal computation. Ensuring that the 
-            mesh behaved correctly under different lighting conditions required iterative testing and 
+            I also faced challenges during the enhancement. Designing a new parametric mesh required careful
+            attention to coordinate systems, exponentiation rules, and normal computation. Ensuring that the
+            mesh behaved correctly under different lighting conditions required iterative testing and
             refinement. Balancing mathematical accuracy with performance required thoughtful trade-offs.
         </p>
 
         <p>
-            Overall, this enhancement strengthened my skills in algorithmic design, data structure usage, 
-            mathematical modeling, and professional documentation. It also reinforced key project management 
-            abilities, including planning a structured, multi-stage workflow, coordinating several technical 
-            components, and ensuring safe, modular integration through isolated testing. Together, these 
-            improvements elevated the quality and clarity of a core component of my CS 330 project, making 
+            Overall, this enhancement strengthened my skills in algorithmic design, data structure usage,
+            mathematical modeling, and professional documentation. It also reinforced key project management
+            abilities, including planning a structured, multi-stage workflow, coordinating several technical
+            components, and ensuring safe, modular integration through isolated testing. Together, these
+            improvements elevated the quality and clarity of a core component of my CS 330 project, making
             it a strong addition to my ePortfolio.
         </p>
     </div>
 
     <!-- Original Artifact Section -->
-    <div class="section">
-        <h2>Original Artifact – Mesh Generation Module</h2>
+    <div class="card">
+        <h2>Original Artifact</h2>
         <p>
-            In the embedded file explorer below, expand the <strong>artifact-two</strong> folder in the left 
-            sidebar, then select the folder labeled <strong>original</strong>. This will reveal the complete file 
-            structure of the original mesh generation module from my CS 330 project. You may click any file to 
+            In the embedded file explorer below, expand the <strong>artifact-two</strong> folder in the left
+            sidebar, then select the folder labeled <strong>original</strong>. This will reveal the complete file
+            original mesh generation module from my CS 330 project. You may click any file to
             view its contents directly within this page.
         </p>
 
         <p>
-            While both the original and enhanced versions of Artifact Two are visible in the left panel, this 
-            viewer is intended for exploring the <strong>original</strong> implementation. A separate viewer is 
-            provided below for the enhanced version to make comparison easier and to allow each version to be 
+            While both the original and enhanced versions of Artifact Two are visible in the left panel, this
+            viewer is intended for exploring the <strong>original</strong> implementation. A separate viewer is
+            provided below for the enhanced version to make comparison easier and to allow each version to be
             reviewed independently.
         </p>
 
-        <!-- Placeholder iframe — replace with GitHub1s link -->
-        <iframe 
-            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-two/original"
-            width="100%" 
-            height="600px">
+        <iframe
+            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-two/original">
         </iframe>
     </div>
 
     <!-- Enhanced Artifact Section -->
-    <div class="section">
-        <h2>Enhanced Artifact – Mesh Generation Module</h2>
+    <div class="card">
+        <h2>Enhanced Artifact</h2>
         <p>
-            In the embedded file explorer below, expand the <strong>artifact-two</strong> folder in the left 
-            sidebar, then select the folder labeled <strong>enhanced</strong>. This will display the updated mesh 
+            In the embedded file explorer below, expand the <strong>artifact-two</strong> folder in the left
+            sidebar, then select the folder labeled <strong>enhanced</strong>. This will display the updated mesh
             generation module, including the new superellipsoid implementation and refactored algorithms.
         </p>
 
         <p>
-            Although both the original and enhanced versions can be accessed from the left panel, this viewer is 
-            centered on the <strong>enhanced</strong> version. The original version is shown above to support 
+            Although both the original and enhanced versions can be accessed from the left panel, this viewer is
+            centered on the <strong>enhanced</strong> version. The original version is shown above to support
             clear, side-by-side comparison of the improvements.
         </p>
 
-        <!-- Placeholder iframe — replace with GitHub1s link -->
-        <iframe 
-            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-two/enhanced"
-            width="100%" 
-            height="600px">
+        <iframe
+            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-two/enhanced">
         </iframe>
     </div>
 
     <!-- Enhancement Summary -->
-    <div class="section">
+    <div class="card">
         <h2>Enhancement Summary</h2>
 
         <p>
-            This enhancement focused on improving the algorithmic efficiency, mathematical clarity, and 
-            maintainability of the mesh generation module in my CS 330 project. I added a fully parametric 
-            superellipsoid mesh, optimized trigonometric computations, improved loop structure, validated 
-            input parameters, and documented the mathematical reasoning behind the mesh. These improvements 
-            strengthened the artifact’s performance, safety, and clarity while demonstrating my abilities in 
+            This enhancement focused on improving the algorithmic efficiency, mathematical clarity, and
+            maintainability of the mesh generation module in my CS 330 project. I added a fully parametric
+            superellipsoid mesh, optimized trigonometric computations, improved loop structure, validated
+            input parameters, and documented the mathematical reasoning behind the mesh. These improvements
+            strengthened the artifact’s performance, safety, and clarity while demonstrating my abilities in
             algorithmic reasoning, data structure design, and geometric computation.
         </p>
     </div>
