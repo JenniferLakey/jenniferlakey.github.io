@@ -1,1 +1,201 @@
-<!-- Artifact One Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ePortfolio – Artifact One</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            max-width: 900px;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: bold;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        iframe {
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/artifact-one/">Artifact One</a>
+        <a href="/artifact-two/">Artifact Two</a>
+        <a href="/artifact-three/">Artifact Three</a>
+    </nav>
+
+    <h1>Artifact One – Software Engineering & Design</h1>
+
+    <!-- Narrative Section -->
+    <div class="section">
+        <h2>Artifact Description</h2>
+        <p>
+            The artifact I selected for the software design and engineering category is my Inventory App from 
+            CS 360: Mobile Architecture and Programming. This Android application was originally created as my 
+            final project for that course and is built using Java, Room for data persistence, LiveData for 
+            reactive UI updates, and a multi-screen workflow that includes login, permissions, inventory 
+            management, item details, and editing. The project was designed to demonstrate mobile architecture 
+            principles, lifecycle management, UI and UX design, and the development of resilient, user-centered 
+            applications. Because it incorporates MVVM architecture, database integration, and multiple 
+            interactive screens, it provides a strong foundation for demonstrating software engineering and 
+            architectural reasoning.
+        </p>
+
+        <h2>Justification for Inclusion and Skills Demonstrated</h2>
+        <p>
+            I selected this artifact for my ePortfolio because it showcases my ability to design, refactor, and 
+            maintain a complex mobile application while applying industry-standard architectural patterns. The 
+            enhancement I performed, which unified the quantity update workflow across all screens, highlights 
+            several key software engineering skills. Before enhancement, the app contained duplicated quantity 
+            update logic in the InventoryAdapter, ItemDetailActivity, and EditItemActivity. This led to 
+            inconsistent behavior, lifecycle issues, and occasional crashes when navigating between screens. 
+            By centralizing this logic into a single, lifecycle-aware method in the repository and ViewModel, 
+            I improved maintainability, eliminated redundancy, and ensured consistent behavior across the 
+            entire application.
+        </p>
+
+        <p>
+            This enhancement also strengthened the app’s architectural integrity. The repository now handles 
+            all business logic, including validation, persistence, and zero-stock notifications, while the 
+            ViewModel exposes a unified entry point for quantity updates. Activities and adapters no longer 
+            perform direct database writes, which aligns with MVVM best practices and improves testability. 
+            In addition, I updated documentation and comments to clearly explain the new workflow, making the 
+            codebase easier for future developers or hiring managers reviewing my portfolio to understand.
+        </p>
+
+        <h2>Course Outcomes Achieved</h2>
+        <p>
+            This enhancement demonstrates clear progress toward several CS 499 course outcomes.
+        </p>
+
+        <p>
+            <strong>Outcome 1 – Collaborative and user-centered decision making:</strong>  
+            This is reflected in the redesign of the mobile workflow to reduce friction, improve clarity, and 
+            ensure predictable behavior across screens. By centralizing logic and improving lifecycle 
+            consistency, the application better supports user needs and reduces confusion.
+        </p>
+
+        <p>
+            <strong>Outcome 2 – Professional communication:</strong>  
+            This is demonstrated through the creation of clear documentation, improved UI and UX flow 
+            descriptions, and structured explanations of lifecycle behavior and design decisions. These 
+            updates make the architecture easier for both technical and non-technical audiences to understand.
+        </p>
+
+        <p>
+            <strong>Outcome 4 – Innovative tools, techniques, and best practices:</strong>  
+            This is shown through the refactoring of the Android activity lifecycle, correction of state 
+            management issues, and implementation of best-practice mobile development patterns. Centralizing 
+            business logic, improving LiveData usage, and strengthening MVVM separation all reflect modern, 
+            industry-aligned engineering practices.
+        </p>
+
+        <p>
+            Outcomes 3 and 5 will be addressed in later artifacts, since they relate more directly to 
+            algorithms, data structures, and security-focused design.
+        </p>
+
+        <h2>Reflection on the Enhancement Process</h2>
+        <p>
+            Enhancing this artifact taught me a great deal about architectural refactoring, lifecycle 
+            management, and the importance of eliminating duplicated logic in multi-screen applications. 
+            During the code review, I identified several issues, including repeated quantity update logic, 
+            inconsistent UI behavior, stale LiveData references, and occasional crashes when navigating back 
+            from the detail screen. I also identified that some components, such as the InventoryAdapter, were 
+            performing database writes directly, which violated MVVM principles and made the app harder to 
+            maintain.
+        </p>
+
+        <p>
+            The enhancement process required me to step back and think holistically about the application’s 
+            workflow. I had to trace how quantity updates flowed through each screen, identify where 
+            inconsistencies originated, and design a unified solution that would work across all components. 
+            This required careful planning, debugging, and iterative refinement, which aligns closely with my 
+            long-term goal of moving into project management. I also strengthened my ability to communicate 
+            technical decisions clearly through updated comments, pseudocode, and architectural explanations.
+        </p>
+
+        <p>
+            Overall, this enhancement significantly improved the reliability, maintainability, and clarity of 
+            the Inventory App. It also reinforced my understanding of mobile architecture and demonstrated my 
+            ability to apply best practices to solve real design problems. This makes the artifact a strong 
+            addition to my ePortfolio and an effective representation of my software engineering and project 
+            management capabilities.
+        </p>
+    </div>
+
+    <!-- Original Artifact Section -->
+    <div class="section">
+        <h2>Original Artifact – Project Structure</h2>
+        <p>This is the original version of my CS 360 mobile application before enhancements.</p>
+
+        <iframe 
+            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-one/original"
+            width="100%" 
+            height="600px">
+        </iframe>
+    </div>
+
+    <!-- Enhanced Artifact Section -->
+    <div class="section">
+        <h2>Enhanced Artifact – Project Structure</h2>
+        <p>This is the enhanced version of the project demonstrating improvements in software engineering and design.</p>
+
+        <iframe 
+            src="https://github1s.com/JenniferLakey/jenniferlakey.github.io/tree/main/artifact-one/enhanced"
+            width="100%" 
+            height="600px">
+        </iframe>
+    </div>
+
+    <!-- Enhancement Summary -->
+    <div class="section">
+        <h2>Enhancement Summary</h2>
+
+        <p>
+            The enhancement for this artifact focused on unifying and centralizing the quantity update workflow 
+            across all screens in the Inventory App. In the original implementation, quantity changes were 
+            handled separately in multiple components—including the InventoryAdapter, ItemDetailActivity, and 
+            EditItemActivity—which resulted in duplicated logic, inconsistent behavior, and occasional crashes 
+            when navigating between screens. By refactoring this workflow into a single, lifecycle-aware method 
+            within the repository and ViewModel, I eliminated redundancy, improved maintainability, and ensured 
+            consistent behavior throughout the application.
+        </p>
+
+        <p>
+            This enhancement strengthened the architectural integrity of the project by reinforcing proper MVVM 
+            separation. The repository now manages all business logic, including validation, persistence, and 
+            zero-stock notifications, while the ViewModel exposes a unified entry point for quantity updates. 
+            Activities and adapters no longer perform direct database writes, which improves testability and 
+            aligns the application with industry-standard mobile development practices. Additionally, I updated 
+            documentation and comments to clearly explain the new workflow, making the codebase more accessible 
+            to future developers and easier for hiring managers to evaluate.
+        </p>
+
+        <p>
+            Overall, this enhancement improved the reliability, clarity, and scalability of the Inventory App. 
+            It demonstrates my ability to identify architectural issues, design effective refactoring strategies, 
+            and apply best practices in software engineering. These improvements also reflect my growing 
+            strengths in mobile architecture, lifecycle management, and professional communication—skills that 
+            directly support my long-term goals in technical project management and software design leadership.
+        </p>
+    </div>
+
+</body>
+</html>
