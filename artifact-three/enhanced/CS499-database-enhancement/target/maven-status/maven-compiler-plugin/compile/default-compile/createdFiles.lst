@@ -1,0 +1,11 @@
+edu\snhu\jenniferlakey\repository\ContactRepository.class
+edu\snhu\jenniferlakey\services\AppointmentService.class
+edu\snhu\jenniferlakey\repository\TaskRepository.class
+edu\snhu\jenniferlakey\models\Appointment.class
+edu\snhu\jenniferlakey\services\ContactService.class
+edu\snhu\jenniferlakey\App.class
+edu\snhu\jenniferlakey\models\Contact.class
+edu\snhu\jenniferlakey\database\MongoConnection.class
+edu\snhu\jenniferlakey\services\TaskService.class
+edu\snhu\jenniferlakey\repository\AppointmentRepository.class
+edu\snhu\jenniferlakey\models\Task.class

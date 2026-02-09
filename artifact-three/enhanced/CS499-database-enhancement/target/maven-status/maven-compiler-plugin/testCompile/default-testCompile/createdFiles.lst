@@ -1,0 +1,11 @@
+edu\snhu\jenniferlakey\AppTest.class
+edu\snhu\jenniferlakey\repository\TaskRepositoryTest.class
+edu\snhu\jenniferlakey\models\ContactTest.class
+edu\snhu\jenniferlakey\models\TaskTest.class
+edu\snhu\jenniferlakey\services\AppointmentServiceTest.class
+edu\snhu\jenniferlakey\services\TaskServiceTest.class
+edu\snhu\jenniferlakey\database\MongoConnectionTest.class
+edu\snhu\jenniferlakey\models\AppointmentTest.class
+edu\snhu\jenniferlakey\repository\ContactRepositoryTest.class
+edu\snhu\jenniferlakey\repository\AppointmentRepositoryTest.class
+edu\snhu\jenniferlakey\services\ContactServiceTest.class
