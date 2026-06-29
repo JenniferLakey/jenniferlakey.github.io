@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvGridItemName"
+        android:text="@string/item_name"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnDecreaseRow"
+        android:src="@drawable/decrease_quantity"
+        android:contentDescription="@string/decrease_quantity"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/tvGridQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/quantity_label" />
+
+    <ImageButton
+        android:id="@+id/btnIncreaseRow"
+        android:src="@drawable/increase_quantity"
+        android:contentDescription="@string/increase_quantity"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/tvGridCategory"
+        android:text="@string/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnDeleteRow"
+        android:src="@android:drawable/ic_delete"
+        android:contentDescription="@string/delete_item"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+</LinearLayout>
