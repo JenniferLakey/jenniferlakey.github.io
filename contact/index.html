@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact – Jennifer Lakey</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 1200px;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #ffffff, #e8f1ff);
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #024ea2;
+            text-decoration: underline;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+        }
+
+        h1, h2, h3 {
+            color: #024ea2;
+        }
+
+        .contact-link {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            color: #024ea2;
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="/">Home</a>
+    <a href="/project-management/">Project Management</a>
+    <a href="/computer-science/">Computer Science</a>
+    <a href="/skills/">Skills</a>
+    <a href="/resume/">Resume</a>
+    <a href="/contact/">Contact</a>
+</nav>
+
+<hr style="margin-top: 50px; margin-bottom: 40px;">
+
+<!-- HEADER -->
+<header style="
+    background: #ffffffcc;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-top: 30px;
+    margin-bottom: 40px;
+">
+    <h1 style="margin: 0; font-size: 2.4em; color: #024ea2;">
+        Contact Me
+    </h1>
+    <p style="margin: 8px 0 0; font-size: 1.3em; color: #444;">
+        Let’s connect — I’m always open to discussing new opportunities, collaborations, and technical projects.
+    </p>
+</header>
+
+<!-- CONTACT CARD -->
+<div class="card">
+    <h2>Get in Touch</h2>
+    <p>If you’d like to reach out, here are the best ways to contact me:</p>
+
+    <h3>Email</h3>
+    <p>
+        <a class="contact-link" href="mailto:jenlakey1986@gmail.com">
+            📧 jenlakey1986@gmail.com
+        </a>
+	<a class="contact-link" href="mailto:jennifer.lakey@snhu.edu">
+            📧 jennifer.lakey@snhu.edu
+        </a>
+    </p>
+
+    <h3>LinkedIn</h3>
+    <p>
+        <a class="contact-link" href="https://www.linkedin.com/in/jennifer-lakey-07790a391/" target="_blank">
+            🔗 linkedin.com/in/jenniferlakey
+        </a>
+    </p>
+
+    <h3>GitHub</h3>
+    <p>
+        <a class="contact-link" href="https://github.com/JenniferLakey" target="_blank">
+            💻 github.com/JenniferLakey
+        </a>
+    </p>
+</div>
+
+<!-- OPTIONAL MESSAGE CARD -->
+<div class="card">
+    <h2>Send a Message</h2>
+    <p>You can also send a direct message using the form below.</p>
+
+    <form action="https://formspree.io/f/xeebwqvo" method="POST">
+        <label for="name"><strong>Name</strong></label><br>
+        <input type="text" id="name" name="name" required
+               style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;">
+
+        <label for="email"><strong>Email</strong></label><br>
+        <input type="email" id="email" name="email" required
+               style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;">
+
+        <label for="message"><strong>Message</strong></label><br>
+        <textarea id="message" name="message" rows="6" required
+                  style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+
+        <button type="submit" style="
+            background: #0366d6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            cursor: pointer;
+        ">
+            Send Message
+        </button>
+    </form>
+    <p style="font-size: 0.9em; color: #666; margin-top: 10px;">
+    </p>
+</div>
+
+<footer style="margin-top: 60px; font-size: 0.9em; color: #666;">
+    © 2026 Jennifer Lakey
+</footer>
+
+</body>
+</html>
