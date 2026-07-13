@@ -92,6 +92,7 @@ Each portfolio contains multiple subfolders, each with its own `index.html` and 
 │   └── index.html
 ├── resume/
 │   ├── index.html
+│   ├── diploma.pdf
 │   └── resume.pdf
 └── contact/
     └── index.html
@@ -125,6 +126,7 @@ The evolution included:
    - `/skills/` – consolidated technical, PM, and cognitive strengths  
    - `/resume/` – HTML resume plus downloadable PDF for recruiters  
    - `/contact/` – simple, professional contact page  
+   - Updated the resume page to include my official digital diploma and graduation honors (Summa Cum Laude)
 
 This transformation demonstrates my ability to plan, iterate, and deliver structured technical work aligned with long‑term career goals.
 
@@ -150,7 +152,8 @@ The `/resume/` page includes:
 
 - A fully formatted HTML version of my resume  
 - A downloadable PDF (`resume.pdf`)  
-- A styled download button for easy access  
+- Degree verification via my official digital diploma  
+- Updated education section reflecting **Graduated July 2026 — Summa Cum Laude**
 
 ---
 
@@ -163,6 +166,7 @@ This portfolio is designed to:
 - Provide structured examples of my academic and technical work  
 - Present a polished, professional online presence for recruiters and collaborators  
 - Serve as a long‑term, maintainable platform I can extend as my career grows  
+- Provide verified academic credentials, including my official diploma and graduation honors.
 
 ---
 
